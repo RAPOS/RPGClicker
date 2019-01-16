@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mine_shop_background"
+    tools:context=".ShopActivity">
+
+    <ImageView
+        android:id="@+id/mine_shop_lvl_up"
+        android:layout_width="wrap_content"
+        android:layout_height="178dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mine_shop_lvl_up" />
+
+    <ImageView
+        android:id="@+id/mine_shop_pickaxe"
+        android:onClick="UpdatePickaxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mine_shop_lvl_up"
+        app:srcCompat="@drawable/mine_shop_pickaxe" />
+
+    <TextView
+        android:id="@+id/mine_shop_pickaxe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:fontFamily="@font/minecraft"
+        android:onClick="UpdatePickaxe"
+        android:text="Кирка"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_pickaxe"
+        app:layout_constraintStart_toStartOf="@+id/mine_shop_pickaxe"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_pickaxe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mine_shop_pickaxe_price"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="right"
+        android:onClick="UpdatePickaxe"
+        android:text="250"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_pickaxe"
+        app:layout_constraintEnd_toEndOf="@+id/mine_shop_pickaxe"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_pickaxe"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/mine_shop_speed_pickaxe"
+        android:onClick="UpdateSpeedPickaxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mine_shop_pickaxe"
+        app:srcCompat="@drawable/mine_shop_speed_pickaxe" />
+
+    <TextView
+        android:id="@+id/mine_shop_speed_pickaxe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:fontFamily="@font/minecraft"
+        android:onClick="UpdateSpeedPickaxe"
+        android:text="Ускорение"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_speed_pickaxe"
+        app:layout_constraintStart_toStartOf="@+id/mine_shop_speed_pickaxe"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_speed_pickaxe"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mine_shop_speed_pickaxe_price"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="right"
+        android:onClick="UpdateSpeedPickaxe"
+        android:text="5000"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_speed_pickaxe"
+        app:layout_constraintEnd_toEndOf="@+id/mine_shop_speed_pickaxe"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_speed_pickaxe"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/mine_shop_workers"
+        android:onClick="UpdateWorkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mine_shop_speed_pickaxe"
+        app:srcCompat="@drawable/mine_shop_workers" />
+
+    <TextView
+        android:id="@+id/mine_shop_workers_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:fontFamily="@font/minecraft"
+        android:onClick="UpdateWorkers"
+        android:text="Рабочие"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_workers"
+        app:layout_constraintStart_toStartOf="@+id/mine_shop_workers"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_workers"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mine_shop_workers_price"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="right"
+        android:onClick="UpdateWorkers"
+        android:text="500"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_workers"
+        app:layout_constraintEnd_toEndOf="@+id/mine_shop_workers"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_workers"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/mine_shop_speed_workers"
+        android:onClick="UpdateSpeedWorkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mine_shop_workers"
+        app:srcCompat="@drawable/mine_shop_speed_workers" />
+
+    <TextView
+        android:id="@+id/mine_shop_speed_workers_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:fontFamily="@font/minecraft"
+        android:onClick="UpdateSpeedWorkers"
+        android:text="Уск. рабочих"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_speed_workers"
+        app:layout_constraintStart_toStartOf="@+id/mine_shop_speed_workers"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_speed_workers"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mine_shop_speed_workers_price"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="right"
+        android:onClick="UpdateSpeedWorkers"
+        android:text="1500"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_speed_workers"
+        app:layout_constraintEnd_toEndOf="@+id/mine_shop_speed_workers"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_speed_workers"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/mine_shop_window"
+        android:onClick="returnMine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mine_shop_window" />
+
+    <ImageView
+        android:id="@+id/mine_shop_return_arrow"
+        android:onClick="returnMine"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_window"
+        app:layout_constraintStart_toStartOf="@+id/mine_shop_window"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_window"
+        app:layout_constraintVertical_bias="0.59"
+        app:srcCompat="@drawable/mine_shop_return_arrow" />
+
+    <TextView
+        android:id="@+id/mine_shop_text"
+        android:onClick="returnMine"
+        android:layout_width="227dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="МАГАЗИН"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop_window"
+        app:layout_constraintEnd_toEndOf="@+id/mine_shop_window"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="@+id/mine_shop_window"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop_window"
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

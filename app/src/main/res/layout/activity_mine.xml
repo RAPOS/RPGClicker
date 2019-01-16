@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mine_with_emerald"
+    tools:context=".MineActivity">
+
+    <ImageView
+        android:id="@+id/mine_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:contentDescription="Score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mine_score" />
+
+    <ImageView
+        android:id="@+id/mine_boss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="Boss"
+        app:layout_constraintEnd_toStartOf="@+id/mine_score"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mine_boss" />
+
+    <ImageView
+        android:id="@+id/mine_shop"
+        android:onClick="OpenShop"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="Shop"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mine_shop" />
+
+    <ImageView
+        android:id="@+id/mine_icon_emerald_big"
+        android:onClick="EmeraldMine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:layout_marginBottom="188dp"
+        android:contentDescription="Icon Emerald Big"
+        app:layout_constraintBottom_toTopOf="@+id/mine_shop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mine_boss"
+        app:srcCompat="@drawable/mine_icon_emerald_big" />
+
+    <TextView
+        android:id="@+id/mine_score_text"
+        android:layout_width="120dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="right"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/mine_score"
+        app:layout_constraintTop_toTopOf="@+id/mine_score"
+        tools:ignore="MissingConstraints"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/mine_shop_text"
+        android:onClick="OpenShop"
+        android:layout_width="227dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mine_shop"
+        app:layout_constraintEnd_toEndOf="@+id/mine_shop"
+        app:layout_constraintStart_toStartOf="@+id/mine_shop"
+        app:layout_constraintTop_toTopOf="@+id/mine_shop"
+        tools:ignore="MissingConstraints"
+        android:text="МАГАЗИН" />
+
+    <ImageView
+        android:id="@+id/mine_speed_pickaxe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha="0.5"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/mine_score"
+        app:layout_constraintTop_toBottomOf="@+id/mine_score"
+        app:srcCompat="@drawable/mine_speed_pickaxe" />
+
+    <ImageView
+        android:id="@+id/mine_speed_workers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha="0.5"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/mine_score"
+        app:layout_constraintTop_toBottomOf="@+id/mine_speed_pickaxe"
+        app:srcCompat="@drawable/mine_speed_workers" />
+
+</android.support.constraint.ConstraintLayout>
